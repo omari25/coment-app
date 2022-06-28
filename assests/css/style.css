@@ -1,0 +1,124 @@
+* {
+    font-family: 'Poppins', sans-serif;    
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.overall {
+    background-color: #a7e0e0;
+    padding: 2vh;
+}
+
+.dashboard {
+    width: 70%;
+    margin: auto;
+}
+
+.dashboard  a {
+    color: #25157e;
+    text-decoration: none;
+}
+
+.dashboard h1 {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 4vw;
+}
+
+.comment-div {
+    border: 1px solid #bdafaf;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #ebe7e7;
+    margin-bottom: 3vh;
+    padding-bottom: 30px;
+    font-size: 1.2vw;
+}
+
+.comment-div img{
+    margin: auto;
+    width: 80%;
+    height: auto;
+    padding: 2vh 0 0;
+}
+
+.desc-box{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px 0;
+}
+
+.comment-div h1 {
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.my-form {
+    margin: auto;
+    width: 80%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-form #textinput {
+    height: 30px;
+    width: 60%;
+    border: none;
+}
+
+#textinput:focus {
+    outline: none;
+    background-color: #ffffff;
+  }
+
+#add-comment {
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1vw;
+}
+
+.comment-sec {
+    width: 80%;
+    margin: auto;
+    height: 150px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #dfdddd;
+}
+
+.overflow {
+    padding: 30px;
+    background-color: white;
+}
+
+.one-comment {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebe7e7;
+    border: 1px solid #bdafaf;
+    padding: 0 40px;
+    height: auto;
+}
+
+
+.the-comment{
+    max-width: 60%;
+    font-size: 1.2vw;
+}
+#btn {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
