@@ -6,14 +6,10 @@ document.addEventListener("DOMContentLoaded", function(ev) {
 
     fetch('http://localhost:3000/comments')
     .then(res => res.json())
-    .then(data => {
-        console.log(data);
-        renderComment(data);
-    })
+    .then(data => renderComment(data))
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-
         let object = {
             comment: `${textInput.value}`,
         }
@@ -49,5 +45,4 @@ document.addEventListener("DOMContentLoaded", function(ev) {
             })
         })
     }
-});
-
+})
