@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(ev) {
     const commentSection = document.querySelector('.overflow');
     const textInput = document.querySelector('#textinput');
 
-    fetch('http://localhost:3000/comments')
+    fetch('https://young-dawn-44660.herokuapp.com/comments')
     .then(res => res.json())
     .then(data => renderComment(data))
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(ev) {
         let object = {
             comment: `${textInput.value}`,
         }
-        fetch('http://localhost:3000/comments', {
+        fetch('https://young-dawn-44660.herokuapp.com/comments', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -34,8 +34,7 @@ document.addEventListener("DOMContentLoaded", function(ev) {
             commentSection.appendChild(div);
             div.addEventListener('click', (e) => {
                 if(e.target.id === 'btn'){
-                    console.log('hello')
-                    fetch(`http://localhost:3000/comments/${item.id}`, {
+                    fetch(`https://young-dawn-44660.herokuapp.com/comments/${item.id}`, {
                         method: 'DELETE',
                         headers: {
                             "Content-Type": "application/json",
